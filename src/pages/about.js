@@ -1,20 +1,14 @@
 import * as React from 'react'
+import Layout from '../components/layout'
 
-const AboutPage = ()=>{
-    return(
-        <main>
-            <h2>About Us</h2>
-            <h6>In this page you can find more about our company.</h6>
-        </main>
-    )
+const AboutPage = () => {
+  return (
+    <Layout pageTitle="About Me">
+      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    </Layout>
+  )
 }
 
-export const Head = () => (
-    <>
-      <title>About Us</title>
-      <meta name="description" content="The company is a local business at the internet provided by me" />
-    </>
-  )
+export const Head = () => <title>About Me</title>
 
-export default AboutPage;
-
+export default AboutPage
